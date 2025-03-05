@@ -3,28 +3,437 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 Portfolio</title>
+    <title>2025 PORTFOLIO</title>
+    <!-- scrollTrigger -->
+    <!-- scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/web.css">
     <script src="./script/index.js" defer></script>
-    <script src="./script/common.js" defer></script>
 </head>
 <body>
-    <header>
+    <nav>
         <ul class="primary">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li class="home"><a href="#cover">HOME</a></li>
+            <li class="contact"><a href="#contact-page">CONTACT</a></li>
         </ul>
-        <ul class="list">
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">WORKS</a></li>
+        <ul class="content">
+            <li class="about"><a href="#resume">ABOUT ME</a></li>
+            <li class="works"><a href="#works">WORKS</a></li>
         </ul>
-    </header>
-    <section id="cover"></section>
-    <section id="about-me"></section>
+    </nav>
+    <div class="swiper pages">
+        <div class="swiper-wrapper">
+            <!-- 표지 -->
+            <div class="swiper-slide" id="cover">
+                <div class="design">
+                    <div class="hero-title">
+                        <h2>I DESIGN</h2>
+                        <h2>YOU EXPERIENCE</h2>
+                    </div>
+                    <div class="marquee">
+                        <div class="line">
+                            <span>WEB/APP DESIGN</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>WEB PUBLISHING</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>VISUAL DESIGN</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>CONTENTS PLANNING</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                        </div>
+                        <div class="line">
+                            <span>WEB/APP DESIGN</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>WEB PUBLISHING</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>VISUAL DESIGN</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>CONTENTS PLANNING</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                        </div>
+                        <div class="line">
+                            <span>WEB/APP DESIGN</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>WEB PUBLISHING</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>VISUAL DESIGN</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                            <span>CONTENTS PLANNING</span>
+                            <span><img src="./images/icons/circle.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 이력 -->
+            <div class="swiper-slide" id="resume">
+                <div class="intro">
+                    <h1>지속 가능한 디자이너가 되고 싶은<br><em>신윤아</em>입니다.</h1>
+                    <div class="exp">
+                        <p><img src="./images/icons/asterik-B.png" alt=""></p>
+                        <div class="txt">
+                            <p><em class="title">직업적 지속 가능성 (Sustainable Career as a Designer)</em>
+                                <br>1. 단기적으로 소진되지 않고, 오래도록 창작 활동을 지속할 수 있는
+                                <br>2. 번아웃 없이 꾸준히 일하면서 트렌드에 뒤쳐지지 않도록 성장하고 싶은
+                                <br>3. 인하우스, 에이전시 등 다양한 환경에서도 안정적으로 커리어를 지속할 수 있도록 능력을 갖추는
+                                <br>
+                            </p>
+                            <p><em class="title">사회적 지속 가능성 (Social Responsibility in Design)</em>
+                                <br>디자인을 통해 사회적으로 긍정적인 영향을 미치고, 모두를 포용하는 디자인을 하고 싶은
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-wrap">
+                    <div class="basic-info">
+                        <dl class="brith">
+                            <dt>BIRTH</dt>
+                            <dd>1992.09.28</dd>
+                        </dl>
+                        <dl class="tel">
+                            <dt>TEL</dt>
+                            <dd>010.3022.3127</dd>
+                        </dl>
+                        <dl class="mail">
+                            <dt>MAIL</dt>
+                            <dd>an0oynihs@naver.com</dd>
+                        </dl>
+                    </div>
+                    <div class="list-wrap">
+                        <div class="list education">
+                            <h2>EDUCATION</h2>
+                            <p>
+                                <span class="date">2012.03 - 2017.02</span>
+                                <br>경일대학교 조형예술대 사진과 졸업
+                            </p>
+                            <p>
+                                <span class="date">2024.10 - 2025.03</span>
+                                <br>UIUX 웹디자인&웹퍼블리셔 양성과정 수료
+                            </p>
+                        </div>
+                        <div class="list experience">
+                            <h2>EXPERIENCE</h2>
+                            <p>
+                                <span class="date">2023.10 - 2024.10</span>
+                                <br>한화기념관
+                                <br><span class="task">도슨트, 전시 콘텐츠 제작</span>
+                            </p>
+                            <p>
+                                <span class="date">2021.07 - 2022.11</span>
+                                <br>TOUNOU
+                                <br><span class="task">신진 아티스트 발굴, 아트 상품 디자인, 콘텐츠 기획, 전시 기획</span>
+                            </p>
+                            <p>
+                                <span class="date">2019.01 - 2020.09</span>
+                                <br>창동예술촌 아트센터
+                                <br><span class="task">인턴 큐레이터</span>
+                            </p>
+                            <p>
+                                <span class="date">2018.06 - 2018.12</span>
+                                <br>RHIZOME RESIDENCE
+                                <br><span class="task">레지던시 매니지먼트, 에디토리얼 디자인</span>
+                            </p>
+                        </div>
+                        <div class="list license">
+                            <h2>LICENSE</h2>
+                            <p>
+                                <span class="date">2012</span>
+                                <br>GTQ 포토샵 1급
+                            </p>
+                        </div>
+                        <div class="list skill">
+                            <h2>SKILL - CORE COMPETENCISES</h2>
+                            <p>FIGMA
+                                <br><span>UI 와이어프레임 및 프로토타입 제작, 협업 디자인, 디자인 시스템 구축</span>
+                            </p>
+                            <p>HTML 5
+                                <br><span>웹 표준에 맞는 마크업 설계</span>
+                            </p>
+                            <p>CSS 3
+                                <br><span>반응형 디자인, 애니메이션, 레이아웃 기술 구현</span>
+                            </p>
+                            <p>JAVASCRIPT
+                                <br><span>웹 기능성 구현, DOM 조작, 이벤트 처리</span>
+                            </p>
+                            <p>PHOTOSHOP
+                                <br><span>그래픽 디자인, 이미지 보정 및 비주얼 콘텐츠 제작</span>
+                            </p>
+                            <p>NOTION
+                                <br><span>개인 및 협업 업무 관리</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 목차 -->
+            <div class="swiper-slide" id="works">
+                <div class="web">
+                    <h2>01</h2>
+                    <ul class="projects-list">
+                        <li class="title"><a href="#prj-web">웹 프로젝트<img src="./images/icons/go-link-circle.png" alt=""></a></li>
+                        <li>TRIP Q<br><span>가상 플랫폼 웹 기획 · 디자인 · 퍼블리싱</span></li>
+                        <li>크로우캐년<br><span>디바이스 전환 웹사이트 리뉴얼 · 퍼블리싱</span></li>
+                        <li>지그재그<br><span>디바이스 전환 웹사이트 리뉴얼 · 퍼블리싱</span></li>
+                        <li>딥티크<br><span>웹사이트 리뉴얼 · 퍼블리싱 </span></li>
+                    </ul>
+                </div>
+                <div class="mobile">
+                    <h2>02</h2>
+                    <ul class="projects-list">
+                        <li class="title"><a href="#prj-mobile">모바일 프로젝트<img src="./images/icons/go-link-circle.png" alt=""></a></li>
+                        <li>MONTHLY ARTIST<br><span>모바일 콘텐츠 기획 · 디자인</span></li>
+                        <li>DWA<br><span>모바일 콘텐츠 기획 · 디자인</span></li>
+                    </ul>
+                </div>
+                <div class="design">
+                    <h2>03</h2>
+                    <ul class="projects-list">
+                        <li class="title"><a href="#visual-design">비주얼 디자인<img src="./images/icons/go-link-circle.png" alt=""></a></li>
+                        <li>SNS 광고</li>
+                        <li>프로모션 배너</li>
+                        <li>상세 페이지</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 웹프로젝트 -->
+            <div class="swiper-slide" id="prj-web">
+                <h1 class="divider-title">WEBSITE RENEWAL</h1>
+                <div class="work-wrap">
+                    <section class="container trip">
+                        <div class="txt-contents">
+                            <h2>TRIP Q</h2>
+                            <div class="noteworthy">
+                                <h3>NOTEWORTHY</h3>
+                                <p><span></span>가상 플랫폼 웹사이트 기획, 디자인,  퍼블리싱</p>
+                                <p><span></span>회사명, 성향, 슬로건, 비주얼적 요소 등 브랜딩 작업</p>
+                                <p><span></span>메인페이지 Hero Banner 아래 영역은 3개의 섹션으로 나뉘며 
+                                    <br>영역별로 콘텐츠의 길이에 따라 화면이 스크롤 또는 픽스 되도록 하여
+                                    <br>사용자들에게 데스크탑 웹에서의 다채로운 경험을 제공
+                                </p>
+                            </div>
+                            <div class="meta">
+                                <div class="category">
+                                    <p>디바이스</p>
+                                    <p>구성</p>
+                                    <p>사용스킬</p>
+                                </div>
+                                <div class="substance">
+                                    <p>데스크탑 전용 웹사이트</p>
+                                    <p>메인페이지, 로그인페이지</p>
+                                    <p>Figma, Photoshop, HTML5, CSS3, Javascript, Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <a href="https://www.figma.com/design/dLkRNj12tg0XmChOStAD0A/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%9C%EC%9E%91---%EC%97%AC%ED%96%89%EC%82%AC?node-id=0-1&t=mYyB7AjePF2uSaFn-1" target="_blank">기획안, 와이어프레임<img src="./images/icons/go-link.png" alt=""></a>
+                            <a href="https://anooynihs.github.io/trip-q/" target="_blank">퍼블리싱 결과<img src="./images/icons/go-link.png" alt=""></a>
+                        </div>
+                        <div class="thumbnail"><img src="./images/web-trip.jpg" alt=""></div>
+                    </section>
+                    <section class="container crowcanyon">
+                        <div class="txt-contents">
+                            <h2>크로우캐년</h2>
+                            <div class="noteworthy">
+                                <h3>NOTEWORTHY</h3>
+                                <p><span></span>가상 플랫폼 웹사이트 기획, 디자인,  퍼블리싱</p>
+                                <p><span></span>회사명, 성향, 슬로건, 비주얼적 요소 등 브랜딩 작업</p>
+                                <p><span></span>메인페이지 Hero Banner 아래 영역은 3개의 섹션으로 나뉘며 
+                                    <br>영역별로 콘텐츠의 길이에 따라 화면이 스크롤 또는 픽스 되도록 하여
+                                    <br>사용자들에게 데스크탑 웹에서의 다채로운 경험을 제공
+                                </p>
+                            </div>
+                            <div class="meta">
+                                <div class="category">
+                                    <p>디바이스</p>
+                                    <p>구성</p>
+                                    <p>사용스킬</p>
+                                </div>
+                                <div class="substance">
+                                    <p>모바일(440*956) 전용 웹사이트</p>
+                                    <p>메인페이지</p>
+                                    <p>Figma, Photoshop, HTML5, CSS3, Javascript, Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <a href="https://crowcanyon.co.kr/" target="_blank">원본사이트<img src="./images/icons/go-link-g.png" alt=""></a>
+                            <a href="https://www.figma.com/design/Nsm6U9OQK59nYKRpFVRRYT/%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8---%ED%81%AC%EB%A1%9C%EC%9A%B0%EC%BA%90%EB%85%84?node-id=125-466&t=aZEMaNZOqabiXExc-1" target="_blank">기획안, 와이어프레임<img src="./images/icons/go-link.png" alt=""></a>
+                            <a href="https://anooynihs.github.io/trip-q/" target="_blank">퍼블리싱 결과<img src="./images/icons/go-link.png" alt=""></a>
+                        </div>
+                        <div class="thumbnail"><img src="./images/web-crow.jpg" alt=""></div>
+                    </section>
+                    <section class="container zigzag">
+                        <div class="txt-contents">
+                            <p class="sub-title">가상 플랫폼 웹 기획 · 디자인 · 퍼블리싱</p>
+                            <h2>TRIP Q</h2>
+                            <div class="noteworthy">
+                                <h3>Noteworthy</h3>
+                                <p>01 여행 큐레이션 플랫폼</p>
+                                <p>02 회사명, 성향, 슬로건, 비주얼적 요소 등 브랜딩 작업</p>
+                                <p>03 메인페이지 Hero Banner 아래 영역은 3개의 섹션으로 나뉘며 
+                                    <br>영역별로 콘텐츠의 길이에 따라 화면이 스크롤 또는 픽스 되도록 하여
+                                    <br>사용자들에게 데스크탑 웹에서의 다채로운 경험을 제공
+                                </p>
+                            </div>
+                            <div class="meta">
+                                <div class="category">
+                                    <p>Environment</p>
+                                    <p>Structure</p>
+                                    <p>Skills Used</p>
+                                </div>
+                                <div class="substance">
+                                    <p>Desktop</p>
+                                    <p>메인페이지, 로그인페이지</p>
+                                    <p>Figma, Photoshop,
+                                        <br>HTML5, CSS3, Javascript, Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <a href="#">와이어프레임<img src="./images/icons/a-m.png" alt=""></a>
+                            <a href="#">웹퍼블리싱 결과<img src="./images/icons/a-m.png" alt=""></a>
+                        </div>
+                        <div class="thumbnail"><img src="" alt=""></div>
+                    </section>
+                    <section class="container diptyque">
+                        <div class="txt-contents">
+                            <p class="sub-title">가상 플랫폼 웹 기획 · 디자인 · 퍼블리싱</p>
+                            <h2>TRIP Q</h2>
+                            <div class="noteworthy">
+                                <h3>Noteworthy</h3>
+                                <p>01 여행 큐레이션 플랫폼</p>
+                                <p>02 회사명, 성향, 슬로건, 비주얼적 요소 등 브랜딩 작업</p>
+                                <p>03 메인페이지 Hero Banner 아래 영역은 3개의 섹션으로 나뉘며 
+                                    <br>영역별로 콘텐츠의 길이에 따라 화면이 스크롤 또는 픽스 되도록 하여
+                                    <br>사용자들에게 데스크탑 웹에서의 다채로운 경험을 제공
+                                </p>
+                            </div>
+                            <div class="meta">
+                                <div class="category">
+                                    <p>Environment</p>
+                                    <p>Structure</p>
+                                    <p>Skills Used</p>
+                                </div>
+                                <div class="substance">
+                                    <p>Desktop</p>
+                                    <p>메인페이지, 로그인페이지</p>
+                                    <p>Figma, Photoshop,
+                                        <br>HTML5, CSS3, Javascript, Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <a href="#">와이어프레임<img src="./images/icons/a-m.png" alt=""></a>
+                            <a href="#">웹퍼블리싱 결과<img src="./images/icons/a-m.png" alt=""></a>
+                        </div>
+                        <div class="thumbnail"><img src="" alt=""></div>
+                    </section>
+                </div>
+            </div>
+            <!-- 모바일프로젝트 -->
+            <div class="swiper-slide" id="prj-mobile">
+                <h1 class="divider-title">MOBILE CONTENTS PLANNING & DESIGN</h1>
+                <div class="work-wrap">
+                    <div class="container monthly">
+                        <div class="explain">
+                            <h3>MONTHLY ARTIST</h3>
+                            <p>매월 선정된 신예 아티스트를 조명하여 그들의 이야기와 경험,
+                                <br>창의적인 여정을 탐색하고 공유할 수 있는 플랫폼을 만드는 것을 목표로 합니다.
+                                <br>관객들이 새로운 예술관을 접하고 예술가를 더 깊이 이해하고 지원하고 재능 있는 예술가를 양성합니다.
+                            </p>
+                            <div class="meta">
+                                <div class="category">
+                                    <p>Environment</p>
+                                    <p>Structure</p>
+                                    <p>Skills Used</p>
+                                </div>
+                                <div class="substance">
+                                    <p>Mobile - Instagram</p>
+                                    <p>커버, 아티스트 소개, 인터뷰, 작품 소개</p>
+                                    <p>Photoshop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper mon-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/monthly/jae 01.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/monthly/jae 02.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/monthly/jae 03.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/monthly/jae 04.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/monthly/jae 05.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container dwa">
+                        <div class="explain">
+                            <h3>DWA (A DAY WITH ART)</h3>
+                            <p>일상 속에서도 예술과 문화를 즐길 수 있도록 돕습니다.
+                                <br>조금은 편안하고 가볍게 소비할 수 있으며 문화 예술에 대한 이해와 관심, 삶의 질을 높이는 것이 목적입니다.
+                                <br>매일 다양한 분야의 에디터를 통해 여러 가지의 주제로 이야기를 전달합니다.
+                            </p>
+                            <div class="meta">
+                                <div class="category">
+                                    <p>Environment</p>
+                                    <p>Structure</p>
+                                    <p>Skills Used</p>
+                                </div>
+                                <div class="substance">
+                                    <p>Mobile - Instagram, Website</p>
+                                    <p>커버, 카테고리, 콘텐츠</p>
+                                    <p>Photoshop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper dwa-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/dwa/dwa 01.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/dwa/dwa 02.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/dwa/dwa 03.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/dwa/dwa 04.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/dwa/dwa 05.png" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/dwa/dwa 06.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 비주얼디자인 -->
+            <div class="swiper-slide" id="visual-design">
+                <h1 class="divider-title">VISUAL DESIGN</h1>
+                <div class="container">
+                    <div class="row">
+                        <p class="sns"><img src="./images/sns1.jpg" alt="">여행사 상품 광고</p>
+                        <p class="sns"><img src="./images/B-spring-coupon.jpg" alt="">여행사 상품 광고</p>
+                        <p class="sns"><img src="./images/B-spring-coupon.jpg" alt="">여행사 상품 광고</p>
+                        <p class="sns"><img src="./images/B-spring-coupon.jpg" alt="">여행사 상품 광고</p>
+                        <p class="bnr"><img src="./images/B-spring-coupon.jpg" alt="">여행사 상품 광고</p>
+                        <p class="bnr"><img src="./images/B-spring-coupon.jpg" alt="">여행사 상품 광고</p>
+                        <p class="detail"><img src="./images/B-spring-coupon.jpg" alt="">여행사 상품 광고</p>
+                        <p class="detail"><img src="./images/B-spring-coupon.jpg" alt="">여행사 상품 광고</p>
+                    </div>
+                    <!-- 팝업배경 -->
+                    <div class="popup-bg">
+                        <div class="popup-content">
+                            <img src="" alt="팝업이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 콘택트(마지막) -->
+            <div class="swiper-slide" id="contact-page">
+                <p>저의 작업을 공유하게 되어 기쁘며, 포트폴리오가 깊은 인상을 남겼기를 바랍니다.<br>감사합니다.</p>
+                <span>please feel free to contact me at</span>
+                <span><img src="" alt=""></span>
+                <h2>010.3022.3127</h2>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
