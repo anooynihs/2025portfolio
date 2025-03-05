@@ -99,9 +99,15 @@ document.addEventListener("DOMContentLoaded", function () {
             popupBg.style.display = "flex";
         });
     });
-
     //닫기
     popupBg.addEventListener("click", function () {
         popupBg.style.display = "none";
     });
+    //스크롤 위치 Top 고정
+    popupBg.scrollTop = 0;
+    popupContent.scrollTop = 0;
+});
+
+document.querySelector(".popup-content").addEventListener("wheel", function(e) {
+    e.stopPropagation(); // 배경 클릭 시 팝업 닫히는 것과 분리
 });
