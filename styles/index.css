@@ -150,20 +150,21 @@ nav .content > li a {}
 }
 #prj-web .work-wrap .container .txt-contents .noteworthy > p {
     font-size: 0.88rem; line-height: 1.6;
-    display: flex; gap: 5px; align-items: center;
+    display: flex; flex-direction: row; align-items: center;
 }
-#prj-web .work-wrap .container .txt-contents .noteworthy > p span {
-    display: block;
-    width: 5px; height: 5px;
-    background-color: #000000;
-    border-radius: 50%;
+#prj-web .work-wrap .container .txt-contents .noteworthy > p img {
+    width: 6px; height: 6px;
+    margin-right: 5px; margin-top: 8px;
+    display: block; align-self: start;
 }
 #prj-web .work-wrap .container .txt-contents .meta {margin-bottom: 60px;}
 #prj-web .work-wrap .container .link {
     display: flex; justify-content: end;
-    gap: 26px; margin-bottom: 8px; 
+    gap: 26px; margin-bottom: 8px;
+    padding-right: 10px;
 }
-#prj-web .work-wrap .container .link a {font-weight: 600;}
+#prj-web .work-wrap .container .link a {font-weight: 600; font-size: 1rem;}
+#prj-web .work-wrap .container .link .original {color: #929292;}
 #prj-web .work-wrap .container .link a img {width: 12px; margin-left: 8px;}
 #prj-web .work-wrap .container .thumbnail {width: 100%; height: 273px; background-color: aquamarine;}
 #prj-web .work-wrap .container .thumbnail img {width: 100%;}
