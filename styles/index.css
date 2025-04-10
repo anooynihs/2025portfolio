@@ -9,7 +9,7 @@ body {
 body::-webkit-scrollbar {display: none;}
 .pages {height: 100vh;}
 .pages .swiper-slide {padding: 40px 0; width: 100%; margin: 0 auto; overflow: hidden;}
-.divider-title {font-size: 13rem; font-weight: 400; text-align: center; color: #eee;}
+.divider-title {font-size: 8rem; font-weight: 400; text-align: center; color: #eee;}
 .meta {display: flex; gap: 22px; font-size: 0.88rem; margin-bottom: 100px;}
 .meta .category {}
 .meta .category p {font-weight: 500; line-height: 1.6;}
@@ -147,7 +147,7 @@ nav .content > li a {}
     justify-content: space-between; align-items: start;
 }
 #prj-web .work-wrap .container {
-    width: calc((100% - 45px) / 4); padding-top: 30px;
+    width: calc((100% - 40px) / 3); padding-top: 30px;
     background-color: #f5f5f589;
 }
 #prj-web .work-wrap .container .txt-contents {padding: 0 30px;}
@@ -181,14 +181,15 @@ nav .content > li a {}
     color: #fff;
 }
 #prj-web .work-wrap .container .link .original {color: #929292; background-color: #cacaca;}
+#prj-web .work-wrap .container .link .proposal {color: #000; background-color: khaki;}
 #prj-web .work-wrap .container .link a img {width: 10px; margin-left: 8px;}
 #prj-web .work-wrap .container .thumbnail {width: 100%; height: 273px; background-color: aquamarine;}
 #prj-web .work-wrap .container .thumbnail img {width: 100%;}
 /* ============================================================= 모바일 */
 #prj-mobile {padding-top: 50px;}
-#prj-mobile .divider-title {font-size: 6.2rem;}
+#prj-mobile .divider-title {font-size: 7.8rem;}
 #prj-mobile .work-wrap {display: flex; justify-content: space-between;}
-#prj-mobile .work-wrap .container {width: calc((100% - 60px) / 2);}
+#prj-mobile .work-wrap .container {width: calc((100% - 20px) / 2); background-color: #f5f5f589;}
 #prj-mobile .work-wrap .container .explain {padding: 60px 60px 0;}
 #prj-mobile .work-wrap .container .explain h3 {font-size: 1.5rem; font-weight: 500; margin-bottom: 5px;}
 #prj-mobile .work-wrap .container .explain > p {line-height: 1.6; margin-bottom: 30px;}
@@ -199,33 +200,31 @@ nav .content > li a {}
 #prj-mobile .work-wrap .container .explain .meta .substance p {}
 #prj-mobile .work-wrap .container .swiper {width: 100%; height: auto;}
 #prj-mobile .work-wrap .container .swiper .swiper-wrapper {}
-#prj-mobile .work-wrap .container .swiper .swiper-wrapper .swiper-slide {padding: 0;}
+#prj-mobile .work-wrap .container .swiper .swiper-wrapper .swiper-slide {padding: 0; width: 360px;}
 #prj-mobile .work-wrap .container .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
-#prj-mobile .work-wrap .monthly .mon-swiper .swiper-wrapper {transition-timing-function:linear;}
+#prj-mobile .work-wrap .img-wrap {width: 100%; display: flex; justify-content: center; gap: 20px;}
+#prj-mobile .work-wrap .img-wrap p {width: 200px;}
+#prj-mobile .work-wrap .img-wrap p img {width: 100%;}
 /* ============================================================= 비주얼디자인 */
-#visual-design {}
-#visual-design .divider-title {}
-#visual-design .container {}
-#visual-design .container h2 {
+#graphic-design {}
+#graphic-design .divider-title {}
+#graphic-design .container {}
+#graphic-design .container h2 {
     text-align:center; font-size: 1.25rem; font-weight: 600;
     margin-bottom: 20px;
 }
-#visual-design .container .row {
-    display: flex; flex-flow: row wrap;
-    justify-content: space-between;
+#graphic-design .container p {cursor: pointer;}
+#graphic-design .container p img {
+    width: 100%; object-fit: cover; overflow: hidden;
 }
-#visual-design .container .row p {
-    width: calc((100% - 45px) / 4); height: 320px;
-    display: flex; flex-direction: column; gap: 6px;
-    font-size: 0.88rem; text-align: center;
-    cursor: pointer;
+#graphic-design .container .row1 {
+    display: flex; justify-content: space-between;
+    margin-bottom: 14px;
 }
-#visual-design .container .row p:nth-child(-n+4) {margin-bottom: 30px;}
-#visual-design .container .row p img {
-    width: 100%; height: 100%;
-    object-fit: cover; overflow: hidden;
-}
-
+#graphic-design .container .row1 .sns {width: calc((100% - 56px) / 5)}
+#graphic-design .container .row2 {display: flex; justify-content: space-between; gap: 14px;}
+#graphic-design .container .row2 p {width: 631px;}
+#graphic-design .container .row2 p img {width: 100%;}
 /* 팝업창 */
 .popup-bg {
     position: fixed; left: 0; top: 0;
@@ -254,7 +253,7 @@ nav .content > li a {}
 #contact-page .divider-title {
     color: #000;
     text-align: start;
-    font-size: 7rem; font-weight: 600;
+    font-size: 7rem; font-weight: 400;
 }
 #contact-page .contents {padding-top: 60px;}
 #contact-page .contents .contact-wrap {display: flex; gap: 100px; margin-bottom: 34px;}

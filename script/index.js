@@ -68,16 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //모바일콘텐츠 슬라이드
 const monthlySwiper = new Swiper('.mon-swiper',{
-    slidesPerView: 2,
-    spaceBetween: 10,
-    loop: true,
-    speed: 4000,
-    autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-    },
-    freeMode: true, // 자동으로 부드럽게 흘러가도록 설정
-    freeModeMomentum: false, // 관성 효과 제거
+    slidesPerView: 'auto',
+    spaceBetween: 12,
+    // loop: true,
+    // speed: 4000,
+    // autoplay: {
+    //     delay: 0,
+    //     disableOnInteraction: false,
+    // },
+    // freeMode: true, // 자동으로 부드럽게 흘러가도록 설정
+    // freeModeMomentum: false, // 관성 효과 제거
 })
 
 const dwaSwiper = new Swiper('.dwa-swiper',{
@@ -86,11 +86,11 @@ const dwaSwiper = new Swiper('.dwa-swiper',{
     freeModeMomentum: false, // 관성 효과 제거
 })
 
-//비주얼디자인 섹션 이미지 팝업
+//그래픽디자인 섹션 이미지 팝업
 document.addEventListener("DOMContentLoaded", function () {
     const popupBg = document.querySelector(".popup-bg");
     const popupContent = document.querySelector(".popup-content img");
-    const imageElements = document.querySelectorAll(".row img");
+    const imageElements = document.querySelectorAll(".row1 img, .row2 img");
 
     //열기
     imageElements.forEach(img => {
@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //스크롤 위치 Top 고정
     popupBg.scrollTop = 0;
     popupContent.scrollTop = 0;
+    imageElements.scrollTop = 0;
 });
 
 document.querySelector(".popup-content").addEventListener("wheel", function(e) {
